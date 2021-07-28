@@ -1,11 +1,6 @@
 [build-system]
-requires = ["flit_core >=2,<4"]
-build-backend = "flit_core.buildapi"
-
-[tool.flit.metadata]
-module = "uv2json"
-author = "Shaurya Chanana"
-author-email = "15051933+chanana@users.noreply.github.com"
-home-page = "https://github.com/chanana/uv2json"
-classifiers = [ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",]
-
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
