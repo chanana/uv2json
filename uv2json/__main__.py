@@ -1,5 +1,10 @@
+"""Convert a UV File to JSON.
+
+Takes a CSV file output by Gilson GX machines and converts it into a JSON file containing sample information alongwith intensities and time for three different UV wavelengths.
+"""
+
 from argparse import ArgumentParser
-from convert_to_json_uv import convert
+from uv2json import convert_to_json_uv
 
 
 def main():
@@ -11,7 +16,7 @@ def main():
     )
 
     args = parser.parse_args()
-    convert(args.filenames)
+    convert_to_json_uv.convert(args.filenames)
 
 
 if __name__ == "__main__":
