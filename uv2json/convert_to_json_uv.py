@@ -1,3 +1,8 @@
+"""Convert a UV File to JSON.
+
+Takes a CSV file output by Gilson GX machines and converts it into a JSON file containing sample information alongwith intensities and time for three different UV wavelengths.
+"""
+
 from json import dump
 from io import StringIO
 from pandas import read_csv
