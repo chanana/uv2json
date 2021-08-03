@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://json-schema.org/draft-07/schema#
-name: Publish Python 🐍 Package 📦 to PyPI
+name: Build & Publish
 on: [push]
 jobs:
-  build:
+  build-n-publish:
     runs-on: ubuntu-latest
 
     steps:
