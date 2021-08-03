@@ -1,3 +1,5 @@
+[![Build & Publish](https://github.com/chanana/uv2json/actions/workflows/build.yml/badge.svg)](https://github.com/chanana/uv2json/actions/workflows/build.yml)
+
 # uv2json
 
 `uv2json` is a python script that converts Gilson GX-270 exported CSVs to JSON format
