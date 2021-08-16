@@ -1,3 +1,6 @@
+# jupyter-notebooks
+*.ipynb
+
 # vscode
 .vscode/*
 !.vscode/settings.json
