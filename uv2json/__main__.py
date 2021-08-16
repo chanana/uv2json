@@ -4,7 +4,7 @@ Takes a CSV file output by Gilson GX machines and converts it into a JSON file c
 """
 
 from argparse import ArgumentParser
-from uv2json import convert_to_json_uv
+from uv2json import uv2json
 
 
 def main():
@@ -16,7 +16,7 @@ def main():
     )
 
     args = parser.parse_args()
-    convert_to_json_uv.convert(args.filenames)
+    uv2json.convert(args.filenames)
 
 
 if __name__ == "__main__":
