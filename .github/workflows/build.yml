@@ -14,16 +14,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install build pandas black flake8 mccabe tox tox-gh-actions
+          python -m pip install --upgrade pip wheel build
+          python -m pip install pandas black flake8 mccabe tox tox-gh-actions
 
       - name: Build package
-        run: python -m build
+        run: python -m build --sdist --wheel --outdir dist/ .
 
       - name: Run tox
         run: tox -e py
 
-      - name: Publish package
+      - name: Publish distribution 📦 to PyPI
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
